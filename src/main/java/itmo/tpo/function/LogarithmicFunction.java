@@ -33,29 +33,4 @@ public class LogarithmicFunction implements FunctionWithAccuracy {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
