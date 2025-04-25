@@ -10,7 +10,7 @@ import static itmo.tpo.FunctionWithAccuracyTestUtils.AssertThatExpression.assert
 
 public class LnTest {
 
-    private final Ln ln = new itmo.tpo.function.logarithm.Ln();
+    private final Ln ln = new Ln();
 
     @ParameterizedTest
     @ValueSource(doubles = {-2, -1, 0})

@@ -9,13 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @UtilityClass
 public class FunctionWithAccuracyTestUtils {
 
-    private static double functionApply(FunctionWithAccuracy function, double argument) {
-        return function.apply(argument);
-    }
-
     private static void testAccuracy(FunctionWithAccuracy function, double expected, double argument) {
-        double result = functionApply(function, argument);
-        assertEquals(expected, result);
+        assertEquals(expected, function.apply(argument), FunctionWithAccuracy.DEFAULT_ACCURACY);
     }
 
     public static class AssertThatExpression {
