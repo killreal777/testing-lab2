@@ -4,7 +4,7 @@ import itmo.tpo.function.FunctionWithAccuracy;
 
 public class Log implements FunctionWithAccuracy {
 
-    private final itmo.tpo.function.logarithm.Ln ln;
+    private final Ln ln;
     private final double base;
 
     public Log(Ln ln, double base) {

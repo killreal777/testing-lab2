@@ -1,22 +1,23 @@
 package itmo.tpo.function;
 
+import itmo.tpo.function.logarithm.*;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class LogarithmicFunction implements FunctionWithAccuracy {
 
-    private final itmo.tpo.function.logarithm.Ln ln;
-    private final itmo.tpo.function.logarithm.Log2 log2;
-    private final itmo.tpo.function.logarithm.Log3 log3;
-    private final itmo.tpo.function.logarithm.Log5 log5;
-    private final itmo.tpo.function.logarithm.Log10 log10;
+    private final Ln ln;
+    private final Log2 log2;
+    private final Log3 log3;
+    private final Log5 log5;
+    private final Log10 log10;
 
     public LogarithmicFunction() {
-        this.ln = new itmo.tpo.function.logarithm.Ln();
-        this.log2 = new itmo.tpo.function.logarithm.Log2(ln);
-        this.log3 = new itmo.tpo.function.logarithm.Log3(ln);
-        this.log5 = new itmo.tpo.function.logarithm.Log5(ln);
-        this.log10 = new itmo.tpo.function.logarithm.Log10(ln);
+        this.ln = new Ln();
+        this.log2 = new Log2(ln);
+        this.log3 = new Log3(ln);
+        this.log5 = new Log5(ln);
+        this.log10 = new Log10(ln);
     }
 
     @Override
